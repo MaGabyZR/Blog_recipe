@@ -1,193 +1,60 @@
-@font-face {
-    font-family: 'brush';
-    src: url('fonts/brush/alexbrush-regular-webfont.woff2') format('woff2'),
-         url('fonts/brush/alexbrush-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
+html {
+  font-size: 62.5%;
 }
 
-/* *, *::before, *::after {
-    box-sizing: border-box;
-} */
-/* html{
-    font-size: 62.5%;               /*10px
-} */
-
-body{
-    margin: 10px;
-    /* height: 200vh;*/
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;        /*16px*/
-    line-height: 1.5;
-    /* letter-spacing: 1px;
-    word-spacing: 5px; */
+body {
+  color: #222;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-
+  color: #000;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
 h1 {
-    margin: 3rem 0 1rem 0;
-    /* font-size: 4.029rem; */
-    /* letter-spacing: -1px; */
-}
-p {
-    width: 50ch;
-    column-count: 2;
-    column-gap: 2rem;
-    column-rule: 3px dotted gray;
-    /* text-align: left;               /*used only for chunck editing text
-    text-decoration: underline;
-    white-space: nowrap;
-    border: 3px solid goldenrod;
-    overflow: hidden;
-    text-overflow: ellipsis; */
+  font-size: 5.61rem;
 }
 
-p + p {                                     /*p+p is to indent the first line from the second p*/
-    width:50ch;
-    text-align: left;
-    text-indent: 1rem;
+h2 {
+  font-size: 4.209rem;
 }
 
-/* h2 {
-    font-size: 3.157rem;
-} */
-
-/* @media screen and (min-width: 400px) {
-    html {
-        font-size: 130%;
-    }
-} */
-
-/* p {
-    margin: 20px;
-    padding: 0;
-    border: dotted 5px olive;
-    font-weight: normal;
-    font-style: oblique;
-    font-size: 1rem;
-    color: #333;
-} */
-/*.box::before{
-    content: "Hello!";
-} */
-/* .boxes {
-    border: 3px solid gray;
-    position: relative;
- } */
-/* .container{
-    /* display: grid;                                              3rows, 2columns */
-    /* grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(2, 100px); */
-    /* grid-template: 100px auto 100px / 30fr 70fr;               short form for defining the rows and columns
-    grid-template-areas: 
-        "header  header" 
-        "sidebar main" 
-        "footer  footer"; */
-/*     row-gap: 10px;
-    column-gap: 10px; */
-    /* gap: 10px;
-    border: 3px solid gray; */
-/*     justify-items: center;
-    align-items: center; */
-/*     justify-content: center;
-    align-content: center; */
-    /* height: 100vh;
-} */
-/* .box{
-    /* flex-basis: 5rem; */
-    /* flex-grow: 1; */
-    /* flex-shrink: 1; */
-    /*width: 5rem;                                                50% pf the parent, which is body, vw:view width, vh:view hight */
-    /* height: 5rem; */
-    /* background: rgb(115, 115, 189); */
-    /* margin: 1rem;
-} */
-/* .box-one{
-    /* grid-column: 1 / span 2;                                  replaced by grid-area*/
-    /* grid-row: 2 / span 2; */
-    /* grid-area: header;
-} */
-/* .box-four{
-    grid-area: footer;
-} */
-
-/* 
-.box-two{
-    background: tomato;
-    position: fixed;                                            /*so this box will always stay on top, even if you scroll down
-    top: 0;
-    left: 2rem;
-    right: 2rem;
-    width: auto;                                                /*so the browser decides what width it should give.
-    bottom: o;
-    z-index: 999999;
-} */
-
-/* .box2 {
-    border: 3px solid tomato;
-    width: 150px;
-    height: 150px;
-    overflow: auto;
-} */
-/* .tweet {
-    border: 3px solid lightslategray;
-}
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-.avatar{
-    width: 5rem;
-    height: 5rem;
-    background-color: goldenrod;
-    float: left;                                    /*to put the p or any other block element next to the avatar.
-    margin-right: 0.5rem;                                
-}
-.clear {                                            /*to put the element below
-    clear: both;
-} */
-
-/* .first{
-    visibility: hidden;
-} */
-
-/* .container{
-    display: flex;
-    flex-direction: column;
-}
-.box{
-    background: goldenrod;
-    padding: 1rem;
-}
-.box:nth-of-type(2){
-    background: darkslateblue;
+h3 {
+  font-size: 3.157rem;
 }
 
-@media screen and (min-width: 600px){
-    .container{
-        flex-direction: row;
-    }
+h4 {
+  font-size: 2.369rem;
 }
-@media screen and (min-width: 900px){
-    .container{
-        flex-direction: row;
-    }
-    .box{
-        background: lightgreen;
-    }
-}
-@media print {
-    body {
-        font-size: 12pt;
-    }
-    .box{
-        padding: 0.5cm;
-    }
-} */
 
+h5 {
+  font-size: 1.777rem;
+}
+
+h6 {
+  font-size: 1.333rem;
+}
+
+img {
+  width: 100%;
+}
+
+ol li {
+  margin-bottom: 2rem;
+}
+
+.lead {
+  font-family: 'PT Serif', 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
